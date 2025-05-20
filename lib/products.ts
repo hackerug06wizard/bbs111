@@ -96,7 +96,7 @@ const products: Product[] = [
     name: "Baby Overall (Brown)",
     price: 25000,
     description: "Brown baby overall, comfortable and perfect for everyday wear.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/brown1.jpg?height=400&width=400",
     category: "clothing",
   },
   {
@@ -104,7 +104,7 @@ const products: Product[] = [
     name: "Baby Overalls Set (White & Brown)",
     price: 50000,
     description: "Set of 2 baby overalls in white and brown colors.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/whitandbrown1.jpg?height=400&width=400",
     category: "clothing",
   },
   {
@@ -112,7 +112,7 @@ const products: Product[] = [
     name: "Baby Rompers",
     price: 25000,
     description: "Comfortable baby rompers for everyday wear.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/ramper.jpg?height=400&width=400",
     category: "clothing",
   },
   {
@@ -120,7 +120,7 @@ const products: Product[] = [
     name: "Baby Bottle Drying Rack",
     price: 45000,
     description: "Convenient rack for drying baby bottles and accessories.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/rack.jpg?height=400&width=400",
     category: "accessories",
   },
   {
@@ -128,7 +128,7 @@ const products: Product[] = [
     name: "Baby Sleep Suit (Navy Blue)",
     price: 35000,
     description: "Navy blue sleep suit for babies 6 months to 3 years.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/navyblue.jpg?height=400&width=400",
     category: "clothing",
   },
   {
@@ -136,7 +136,7 @@ const products: Product[] = [
     name: "Baby Sleep Suit (Sky Pattern)",
     price: 35000,
     description: "Sleep suit with dolphins, pink balloons, and yellow stars pattern for babies 6 months to 3 years.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/dolphins.jpg?height=400&width=400",
     category: "clothing",
   },
   {
@@ -144,15 +144,15 @@ const products: Product[] = [
     name: "Baby Sleep Suit (Pink Flowers)",
     price: 35000,
     description: "Sleep suit with pink flowers pattern for babies 6 months to 3 years.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/flowers.jpg?height=400&width=400",
     category: "clothing",
   },
   {
     id: "18",
     name: "Girl Dresses (3-10 years)",
-    price: 70000,
+    price: 140000,
     description: "Beautiful dresses for girls aged 3 to 10 years.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/dress.jpg?height=400&width=400",
     category: "clothing",
   },
   {
