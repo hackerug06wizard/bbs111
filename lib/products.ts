@@ -104,7 +104,7 @@ const products: Product[] = [
     name: "Baby Overalls Set (White & Brown)",
     price: 50000,
     description: "Set of 2 baby overalls in white and brown colors.",
-    image: "/whitandbrown1.jpg?height=400&width=400",
+    image: "/whiteandbrown1.jpg?height=400&width=400",
     category: "clothing",
   },
   {
