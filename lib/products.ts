@@ -16,7 +16,7 @@ const products: Product[] = [
     price: 10000,
     description:
       "Convenient silicone breast milk collector to save every drop of precious milk during feeding or pumping.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/breastmilkcollector.jpg?height=400&width=400",
     category: "feeding",
   },
   {
@@ -24,7 +24,7 @@ const products: Product[] = [
     name: "Newborn Gift Set",
     price: 25000,
     description: "Complete gift set for newborns including essential items for baby care.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/newbornset.jpg?height=400&width=400",
     category: "accessories",
   },
   {
@@ -32,7 +32,7 @@ const products: Product[] = [
     name: "Breastfeeding Nipple Protector",
     price: 10000,
     description: "Soft silicone nipple protectors to provide relief during breastfeeding.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/nipple.jpg?height=400&width=400",
     category: "feeding",
   },
   {
@@ -40,7 +40,7 @@ const products: Product[] = [
     name: "Wide Mouth Silicone Nipple Bottles",
     price: 10000,
     description: "Wide mouth silicone nipple bottles designed for comfortable feeding.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/silicon.jpg?height=400&width=400",
     category: "bottles",
   },
   {
@@ -48,7 +48,7 @@ const products: Product[] = [
     name: "Silicone Feeding Bottle with Straw (Brown)",
     price: 10000,
     description: "Brown silicone feeding bottle with straw for easy transition from bottle to cup.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/bottle1.jpg?height=400&width=400",
     category: "bottles",
   },
   {
@@ -56,7 +56,7 @@ const products: Product[] = [
     name: "Feeding Bottle 250ml (Green Stripe)",
     price: 30000,
     description: "250ml feeding bottle with green stripe at the top, suitable for babies 6 months and above.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/green.jpg?height=400&width=400",
     category: "bottles",
   },
   {
