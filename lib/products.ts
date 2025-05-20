@@ -160,7 +160,7 @@ const products: Product[] = [
     name: "Toddler Sippy Cup (Green)",
     price: 20000,
     description: "250ml green toddler sippy cup with soft silicone mouth.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/sippy1.jpg?height=400&width=400",
     category: "feeding",
   },
   {
@@ -168,7 +168,7 @@ const products: Product[] = [
     name: "Toddler Sippy Cup (Pink)",
     price: 20000,
     description: "250ml pink toddler sippy cup with soft silicone mouth.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/sippy2.jpg?height=400&width=400",
     category: "feeding",
   },
   {
@@ -176,7 +176,7 @@ const products: Product[] = [
     name: "Toddler Sippy Glass Set (Blue & Pink)",
     price: 20000,
     description: "Set of blue and pink toddler sippy glasses for juice and water.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/blueandpink.jpg?height=400&width=400",
     category: "feeding",
   },
   {
