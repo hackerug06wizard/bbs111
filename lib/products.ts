@@ -64,7 +64,7 @@ const products: Product[] = [
     name: "Feeding Bottle 250ml (Brown Stripe)",
     price: 30000,
     description: "250ml feeding bottle with brown stripe at the top, suitable for babies 6 months and above.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/brown.jpg?height=400&width=400",
     category: "bottles",
   },
   {
@@ -72,7 +72,7 @@ const products: Product[] = [
     name: "Nano Color Baby Feeding Bottle",
     price: 40000,
     description: "Nano color baby feeding bottle with advanced anti-colic system.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/nano.jpg?height=400&width=400",
     category: "bottles",
   },
   {
@@ -80,7 +80,7 @@ const products: Product[] = [
     name: "Peach Color Silicone Bottle",
     price: 30000,
     description: "Peach color silicone bottle without straw, soft and easy to grip.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/peach.jpg?height=400&width=400",
     category: "bottles",
   },
   {
@@ -88,7 +88,7 @@ const products: Product[] = [
     name: "Baby Overall (White)",
     price: 25000,
     description: "White baby overall, comfortable and perfect for everyday wear.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/white.jpg?height=400&width=400",
     category: "clothing",
   },
   {
