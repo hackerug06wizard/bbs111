@@ -41,22 +41,22 @@ export default function Navbar() {
           <SheetContent side="left">
             <Link href="/" className="flex items-center gap-2 mb-8">
               <Image src="/logo.png" alt="Bespoke Baby Store" width={40} height={40} />
-              <span className="font-semibold">Bespoke Baby Store</span>
+              <span className="font-semibold text-sunny">Bespoke Baby Store</span>
             </Link>
             <nav className="flex flex-col gap-4">
-              <Link href="/" className="text-lg font-medium" onClick={() => document.body.click()}>
+              <Link href="/" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
                 Home
               </Link>
-              <Link href="/products" className="text-lg font-medium" onClick={() => document.body.click()}>
+              <Link href="/products" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
                 Products
               </Link>
-              <Link href="/about" className="text-lg font-medium" onClick={() => document.body.click()}>
+              <Link href="/about" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
                 About
               </Link>
-              <Link href="/contact" className="text-lg font-medium" onClick={() => document.body.click()}>
+              <Link href="/contact" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
                 Contact
               </Link>
-              <Link href="/faq" className="text-lg font-medium" onClick={() => document.body.click()}>
+              <Link href="/faq" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
                 FAQ
               </Link>
             </nav>
@@ -65,23 +65,23 @@ export default function Navbar() {
 
         <Link href="/" className="mr-6 flex items-center gap-2">
           <Image src="/logo.png" alt="Bespoke Baby Store" width={40} height={40} />
-          <span className="hidden font-semibold sm:inline-block">Bespoke Baby Store</span>
+          <span className="hidden font-semibold sm:inline-block text-sunny">Bespoke Baby Store</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <Link href="/" className="font-medium transition-colors hover:text-primary">
+          <Link href="/" className="font-medium transition-colors hover:text-sunny">
             Home
           </Link>
-          <Link href="/products" className="font-medium transition-colors hover:text-primary">
+          <Link href="/products" className="font-medium transition-colors hover:text-sunny">
             Products
           </Link>
-          <Link href="/about" className="font-medium transition-colors hover:text-primary">
+          <Link href="/about" className="font-medium transition-colors hover:text-sunny">
             About
           </Link>
-          <Link href="/contact" className="font-medium transition-colors hover:text-primary">
+          <Link href="/contact" className="font-medium transition-colors hover:text-sunny">
             Contact
           </Link>
-          <Link href="/faq" className="font-medium transition-colors hover:text-primary">
+          <Link href="/faq" className="font-medium transition-colors hover:text-sunny">
             FAQ
           </Link>
         </nav>
@@ -130,4 +130,5 @@ export default function Navbar() {
       </div>
     </header>
   )
-}
+              }
+            
