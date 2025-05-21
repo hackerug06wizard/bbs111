@@ -54,7 +54,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <CardContent className="p-4">
           <h3 className="font-medium line-clamp-1">{product.name}</h3>
           <p className="text-sm text-muted-foreground line-clamp-2 mt-1">{product.description}</p>
-          <p className="font-semibold text-primary mt-2">{product.price.toLocaleString()} UGX</p>
+          <p className="font-semibold text-sunny mt-2">{product.price.toLocaleString()} UGX</p>
         </CardContent>
         <CardFooter className="p-4 pt-0">
           <Button
@@ -69,4 +69,4 @@ export default function ProductCard({ product }: { product: Product }) {
       </Card>
     </Link>
   )
-}
+          }
