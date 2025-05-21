@@ -26,7 +26,7 @@ export default function TestimonialSection() {
   return (
     <section className="my-16">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-primary mb-2">What Our Customers Say</h2>
+        <h2 className="text-3xl font-bold text-sunny mb-2">What Our Customers Say</h2>
         <p className="text-muted-foreground">Trusted by parents across Uganda</p>
       </div>
 
@@ -53,4 +53,5 @@ export default function TestimonialSection() {
       </div>
     </section>
   )
-}
+      }
+                
