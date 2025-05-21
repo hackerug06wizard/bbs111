@@ -184,7 +184,7 @@ const products: Product[] = [
     name: "Baby Bottle Warmer 4-in-1",
     price: 45000,
     description: "4-in-1 baby bottle warmer, defroster, steamer, and sterilizer.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/warmer1.jpg?height=400&width=400",
     category: "accessories",
   },
   {
@@ -192,7 +192,7 @@ const products: Product[] = [
     name: "Multifunctional Baby Bottle Warmer with LED",
     price: 65000,
     description: "Multifunctional 4-in-1 baby bottle warmer, sterilizer, steamer, and defroster with LED light.",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/warmer2.jpg?height=400&width=400",
     category: "accessories",
   },
 ]
