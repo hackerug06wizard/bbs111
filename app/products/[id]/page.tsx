@@ -37,7 +37,7 @@ export default async function ProductPage({ params }: { params: { id: string } }
 
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl font-bold">{product.name}</h1>
-          <p className="text-2xl font-semibold text-primary">{product.price.toLocaleString()} UGX</p>
+          <p className="text-2xl font-semibold text-sunny">{product.price.toLocaleString()} UGX</p>
 
           <div className="my-4">
             <h3 className="text-lg font-medium mb-2">Description</h3>
@@ -64,3 +64,4 @@ export default async function ProductPage({ params }: { params: { id: string } }
     </div>
   )
 }
+  
