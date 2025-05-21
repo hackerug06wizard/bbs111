@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="py-12 md:py-24">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            <span className="block text-primary">Let us grow</span>
+            <span className="block text-sunny">Let us grow</span>
             <span className="block">your Baby</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-md">
