@@ -53,6 +53,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        sunny: "#FFF917",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -79,3 +80,4 @@ const config = {
 } satisfies Config
 
 export default config
+          
