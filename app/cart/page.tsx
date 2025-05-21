@@ -61,7 +61,7 @@ export default function CartPage() {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
         <ShoppingCart className="h-16 w-16 mx-auto mb-6 text-muted-foreground" />
-        <h1 className="text-2xl font-bold mb-4">Your cart is empty</h1>
+        <h1 className="text-2xl font-bold mb-4 text-sunny">Your cart is empty</h1>
         <p className="text-muted-foreground mb-8">Looks like you haven't added any products to your cart yet.</p>
         <Link href="/products">
           <Button>Continue Shopping</Button>
@@ -72,7 +72,7 @@ export default function CartPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Your Cart</h1>
+      <h1 className="text-3xl font-bold mb-8 text-sunny">Your Cart</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
@@ -94,10 +94,10 @@ export default function CartPage() {
                     </div>
                     <div>
                       <h3 className="font-medium line-clamp-2">{item.name}</h3>
-                      <p className="text-sm text-muted-foreground md:hidden mt-1">{item.price.toLocaleString()} UGX</p>
+                      <p className="text-sm text-sunny md:hidden mt-1">{item.price.toLocaleString()} UGX</p>
                     </div>
                   </div>
-                  <div className="hidden md:block text-center">{item.price.toLocaleString()} UGX</div>
+                  <div className="hidden md:block text-center text-sunny">{item.price.toLocaleString()} UGX</div>
                   <div className="flex items-center md:justify-center">
                     <span className="text-sm mr-2 md:hidden">Quantity:</span>
                     <Input
@@ -112,7 +112,7 @@ export default function CartPage() {
                     <div className="flex md:hidden items-center">
                       <span className="text-sm mr-2">Total:</span>
                     </div>
-                    <span className="font-medium">{(item.price * item.quantity).toLocaleString()} UGX</span>
+                    <span className="font-medium text-sunny">{(item.price * item.quantity).toLocaleString()} UGX</span>
                     <Button variant="ghost" size="icon" onClick={() => removeFromCart(item.id)} className="ml-2">
                       <Trash2 className="h-4 w-4" />
                       <span className="sr-only">Remove</span>
@@ -127,12 +127,12 @@ export default function CartPage() {
 
         <div>
           <div className="rounded-lg border p-6 shadow-sm sticky top-20">
-            <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
+            <h2 className="text-xl font-semibold mb-4 text-sunny">Order Summary</h2>
 
             <div className="space-y-4">
               <div className="flex justify-between">
                 <span>Subtotal</span>
-                <span>{subtotal.toLocaleString()} UGX</span>
+                <span className="text-sunny">{subtotal.toLocaleString()} UGX</span>
               </div>
               <div className="flex justify-between">
                 <span>Shipping</span>
@@ -143,7 +143,7 @@ export default function CartPage() {
 
               <div className="flex justify-between font-semibold text-lg">
                 <span>Total</span>
-                <span>{subtotal.toLocaleString()} UGX</span>
+                <span className="text-sunny">{subtotal.toLocaleString()} UGX</span>
               </div>
 
               <Button className="w-full" size="lg" onClick={handleCheckout} disabled={loading}>
@@ -159,4 +159,5 @@ export default function CartPage() {
       </div>
     </div>
   )
-}
+        }
+                        
