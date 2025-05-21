@@ -28,7 +28,7 @@ export default function CategorySection() {
   return (
     <section className="my-16">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-primary mb-2">Shop by Category</h2>
+        <h2 className="text-3xl font-bold text-sunny mb-2">Shop by Category</h2>
         <p className="text-muted-foreground">Find the perfect products for your baby</p>
       </div>
 
@@ -53,4 +53,5 @@ export default function CategorySection() {
       </div>
     </section>
   )
-}
+                  }
+                  
