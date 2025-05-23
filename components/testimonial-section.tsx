@@ -19,7 +19,7 @@ export default function TestimonialSection() {
       name: "Kyisakye B.",
       role: "Mother of twins",
       content: "I love the bottle warmer! It's been a lifesaver for late-night feedings with my twins.",
-      avatar: "/kisakye.jpg?height=100&width=100",
+      avatar: "/kyisakye.jpg?height=100&width=100",
     },
   ]
 
