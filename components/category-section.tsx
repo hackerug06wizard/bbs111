@@ -5,24 +5,20 @@ export default function CategorySection() {
   const categories = [
     {
       name: "Baby Bottles",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/babybottles.jpg?height=300&width=300",
       link: "/products?category=bottles",
     },
     {
       name: "Baby Clothing",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/babyclothing.jpg?height=300&width=300",
       link: "/products?category=clothing",
     },
     {
       name: "Accessories",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/accessories.jpg?height=300&width=300",
       link: "/products?category=accessories",
     },
-    {
-      name: "Feeding Supplies",
-      image: "/placeholder.svg?height=300&width=300",
-      link: "/products?category=feeding",
-    },
+    
   ]
 
   return (
