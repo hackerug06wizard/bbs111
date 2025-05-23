@@ -12,7 +12,7 @@ export default function AboutPage() {
         <h1 className="text-3xl font-bold mb-8 text-center text-sunny">About Bespoke Baby Store</h1>
 
         <div className="relative w-full h-64 mb-8 rounded-lg overflow-hidden">
-          <Image src="/placeholder.svg?height=400&width=800" alt="Bespoke Baby Store" fill className="object-cover" />
+          <Image src="/about.jpg?height=400&width=800" alt="Bespoke Baby Store" fill className="object-cover" />
         </div>
 
         <div className="prose max-w-none">
