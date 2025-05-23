@@ -6,20 +6,20 @@ export default function TestimonialSection() {
       name: "Sarah M.",
       role: "Mother of two",
       content: "The bottles from Bespoke Baby Store are amazing! My baby loves them and they're so easy to clean.",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/sarah.jpg?height=100&width=100",
     },
     {
-      name: "David K.",
+      name: "Mathew W.",
       role: "First-time dad",
       content:
         "The quality of the baby clothes is exceptional. They've survived countless washes and still look great!",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/mathew.jpg?height=100&width=100",
     },
     {
-      name: "Michelle T.",
+      name: "Kyisakye B.",
       role: "Mother of twins",
       content: "I love the bottle warmer! It's been a lifesaver for late-night feedings with my twins.",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/kisakye.jpg?height=100&width=100",
     },
   ]
 
