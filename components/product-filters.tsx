@@ -93,12 +93,6 @@ export default function ProductFilters() {
             <Label htmlFor="category-accessories">Accessories</Label>
           </div>
           <div className="flex items-center space-x-2">
-            <Checkbox
-              id="category-feeding"
-              checked={selectedCategories.includes("feeding")}
-              onCheckedChange={() => handleCategoryChange("feeding")}
-            />
-            <Label htmlFor="category-feeding">Feeding Supplies</Label>
           </div>
         </div>
       </div>
