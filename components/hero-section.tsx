@@ -31,7 +31,7 @@ export default function HeroSection() {
         </div>
         <div className="relative h-[400px] md:h-[500px] w-full">
           <Image
-            src="/placeholder.svg?height=500&width=500"
+            src="/hero.jpg?height=500&width=500"
             alt="Bespoke Baby Store Products"
             fill
             className="object-cover rounded-lg"
