@@ -15,6 +15,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 export default function Navbar() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { cart } = useCart()
   const router = useRouter()
 
@@ -28,10 +29,14 @@ export default function Navbar() {
     }
   }
 
+  const handleNavClick = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <Sheet>
+        <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="h-5 w-5" />
@@ -44,19 +49,19 @@ export default function Navbar() {
               <span className="font-semibold text-sunny">Bespoke Baby Store</span>
             </Link>
             <nav className="flex flex-col gap-4">
-              <Link href="/" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
+              <Link href="/" className="text-lg font-medium text-sunny" onClick={handleNavClick}>
                 Home
               </Link>
-              <Link href="/products" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
+              <Link href="/products" className="text-lg font-medium text-sunny" onClick={handleNavClick}>
                 Products
               </Link>
-              <Link href="/about" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
+              <Link href="/about" className="text-lg font-medium text-sunny" onClick={handleNavClick}>
                 About
               </Link>
-              <Link href="/contact" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
+              <Link href="/contact" className="text-lg font-medium text-sunny" onClick={handleNavClick}>
                 Contact
               </Link>
-              <Link href="/faq" className="text-lg font-medium text-sunny" onClick={() => document.body.click()}>
+              <Link href="/faq" className="text-lg font-medium text-sunny" onClick={handleNavClick}>
                 FAQ
               </Link>
             </nav>
