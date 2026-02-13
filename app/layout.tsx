@@ -14,14 +14,15 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Bespoke Baby Store",
   description: "Let us grow your Baby - Premium baby bottles and accessories",
-  generator: "v0.dev",
 }
+
+const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en">
       <head>
@@ -29,43 +30,30 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        {/* ✅ Meta Pixel Script */}
-        <Script
-          id="meta-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window,document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '2621239424886813');
-              fbq('track', 'PageView');
-            `,
-          }}
-        />
+        {PIXEL_ID && (
+          <>
+            <Script
+              id="meta-pixel"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  !function(f,b,e,v,n,t,s)
+                  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                  n.queue=[];t=b.createElement(e);t.async=!0;
+                  t.src=v;s=b.getElementsByTagName(e)[0];
+                  s.parentNode.insertBefore(t,s)}(window,document,'script',
+                  'https://connect.facebook.net/en_US/fbevents.js');
+                  fbq('init', '${PIXEL_ID}');
+                  fbq('track', 'PageView');
+                `,
+              }}
+            />
+          </>
+        )}
 
-        {/* ✅ Noscript fallback */}
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=2621239424886813&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
-
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <CartProvider>
             <div className="flex min-h-screen flex-col">
               <Navbar />
@@ -79,3 +67,4 @@ export default function RootLayout({
     </html>
   )
           }
+                    
